@@ -27,7 +27,7 @@
 /* Smooth in-page scrolling */
 html { scroll-behavior: smooth; }
 
-/* Sticky top navigation */
+/* Sticky top navigation to keep nav bar stick to top of screen */
 .site-nav {
   position: sticky;
   top: 0;
@@ -124,7 +124,7 @@ They use float and width percentages to sit side-by-side on the same row.
   min-height: 225px;     /* 6e */
 }
 
-/* Step 4: Header headshot layout */
+/* step 4 Header headshot layout */
 .profile-img {
   height: auto;        /* keep aspect ratio */
   border-radius: 50%; /* 4c: make the photo circular */
@@ -132,20 +132,20 @@ They use float and width percentages to sit side-by-side on the same row.
   display: block;      /* removes any stray inline gap */
 }
 
-/* Step 6: make profile image responsive inside the narrow column */
+/* step 6 make profile image responsive inside the narrow column */
 .column-narrow .profile-img {
   width: 100%;       /* fills the 30% column width */
   max-width: 300px;  /* ensures it never exceeds 300px, per project specs */
 }
 
-/* Work Experience (1st section) */
+/* Work Experience */
 main section:nth-of-type(1) {
   background-color: var(--color2); /* lighter tone from your palette */
   color: #000;
   padding: 20px;
 }
 
-/* Education (2nd section) */
+/* Education */
 main section:nth-of-type(2) {
   background-color: var(--color3); /* medium tone from your palette */
   color: #000;
@@ -172,15 +172,6 @@ main section:nth-of-type(5) {
   color: #000;
   padding: 20px;
 }
-
-/* Leadership Roles */
-/*
-main section:nth-of-type(6) {
-  background-color: var(--color1);
-  color: #fff;
-  padding: 20px;
-}
-*/
 
 li {
    line-height: 2; /* the spacing in between lines */
@@ -238,13 +229,6 @@ h3 {
   font-style: normal;
 }
 
-/* changed the color of the contact links to light blue */
-/*
-.contact-links a {
-    color: #bedcf1;
-}
-*/
-
 /* Step 3f–g */
 .contact-info a {
   padding: 10px;         /* adds space around each link */
@@ -270,11 +254,11 @@ h3 {
   vertical-align: middle;
 }
 
-/* ===== Leadership section with background image and gradient ===== */
+/* Leadership section with background image and gradient */
 #leadership.leadership-section {
   background:
     linear-gradient(
-      rgba(60, 73, 89, 0.85),   /* darker blue overlay (your theme color w/ opacity) */
+      rgba(60, 73, 89, 0.85),   /* darker blue overlay */
       rgba(60, 73, 89, 0.85)
     ),
     url("../images/Leadership_background.jpg") center / cover no-repeat;
@@ -282,6 +266,6 @@ h3 {
   color: #fff;                /* keep text readable */
   padding: 4rem 0;            /* match other section spacing */
   min-height: 400px;          /* ensures image shows even if short */
-  background-attachment: fixed; /* optional: anchored feel */
+  background-attachment: fixed; /* anchored feel */
 }
 
